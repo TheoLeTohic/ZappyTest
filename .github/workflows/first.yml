@@ -1,9 +1,4 @@
 name: 'Link Checker: All English'
-
-# **What it does**: Renders the content of every page and check all internal links.
-# **Why we have it**: To make sure all links connect correctly.
-# **Who does it impact**: Docs content.
-
 on:
   push:
     branches:
@@ -15,5 +10,4 @@ jobs:
     steps:
       # This step checks out a copy of your repository.
       - uses: actions/checkout@v3
-      # This step references the directory that contains the action.
-      - uses: ./.github/actions/hello-world-action
+      - uses: actions/setup-node@v3
